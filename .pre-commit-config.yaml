@@ -1,0 +1,97 @@
+# DARWIN Pre-commit Configuration
+# ============================
+# This configuration ensures code quality and consistency across the project.
+
+repos:
+  # Basic File Checks
+  # ----------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # File Integrity
+      - id: check-yaml
+        name: Validate YAML files
+      - id: check-json
+        name: Validate JSON files
+      - id: check-toml
+        name: Validate TOML files
+        exclude: |
+          (?x)^(
+              conda/pytorch-geometric/meta.yaml|
+              conda/pyg/meta.yaml
+          )$
+      
+      # Code Quality
+      - id: debug-statements
+        name: Check for debugger imports
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+      
+      # File Formatting
+      - id: end-of-file-fixer
+        name: Fix end of files
+      - id: trailing-whitespace
+        name: Remove trailing whitespace
+      - id: mixed-line-ending
+        name: Normalize line endings
+      
+      # Repository Health
+      - id: check-added-large-files
+        name: Prevent large file commits
+
+  # YAML Specific Linting
+  # -------------------
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        name: YAML style checker
+        args: [-d, '{extends: default, rules: {line-length: disable, document-start: disable, truthy: {level: error}, braces: {max-spaces-inside: 1}}}']
+
+  # Python Code Formatting
+  # --------------------
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
+    hooks:
+      - id: yapf
+        name: Python code formatter
+        additional_dependencies: [toml]
+
+  # Import Organization
+  # -----------------
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: Python import sorter
+
+  # Code Style Checking
+  # -----------------
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        name: PEP8 style checker
+        additional_dependencies: [Flake8-pyproject]
+
+  # Modern Python Linter
+  # ------------------
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.5
+    hooks:
+      - id: ruff
+        name: Ruff code linter
+        args: [--fix, --exit-non-zero-on-fix]
+
+  # Documentation Formatting
+  # ----------------------
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.17
+    hooks:
+      - id: mdformat
+        name: Markdown formatter
+        additional_dependencies:
+          - mdformat-gfm          # GitHub Flavored Markdown
+          - mdformat_frontmatter  # YAML frontmatter
+          - mdformat_footnote     # Footnote support
+

@@ -1,0 +1,108 @@
+# DARWIN Project .gitignore Configuration
+# ===================================
+
+# Python Development
+# -----------------
+
+# Byte-compiled / Optimized Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C Extensions
+*.so
+
+# Distribution & Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing & Coverage
+# -----------------
+# Unit Tests / Coverage Reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Development Tools
+# ----------------
+# Python Environment
+.python-version
+.env             
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Code Quality & Type Checking
+.mypy_cache/
+.dmypy.json
+.dmypy/
+pylint.log
+
+# IDEs & Editors
+# -------------
+.idea/            # PyCharm
+.vscode/          # Visual Studio Code
+*.swp            # Vim
+*.swo
+*.swn
+*.orig
+
+# Operating System
+# ---------------
+.DS_Store        # macOS
+
+# Project Specific
+# ---------------
+# Logs & Temporary Files
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Build & Package Files
+*.manifest
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Docker Related
+.dockerignore
+docker-compose.override.yml
+
+# Application Data
+# ---------------
+# Models & Data
+models/          # Model files
+
+# Database Files
+*.db
+*.sqlite3
+*.sqlite

@@ -1,0 +1,122 @@
+[
+  {
+    "RS": {
+      "title": "Technology Impact",
+      "selftext": "A recent study suggests that AI technology has significantly improved workplace productivity across various industries. The research shows a 40% increase in efficiency when implementing AI-powered tools."
+    },
+    "RC_1": {
+      "body": "AI implementation leads to increased workplace efficiency",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Environmental Innovation",
+      "selftext": "New breakthrough in renewable energy storage could revolutionize how we power our homes. Scientists have developed a novel battery technology that can store solar energy for up to 30 days."
+    },
+    "RC_1": {
+      "body": "Revolutionary energy storage solution extends solar power capabilities",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Healthcare Advancement",
+      "selftext": "Researchers have developed a new AI-powered diagnostic tool that can detect early signs of various diseases with 95% accuracy. This breakthrough could transform preventive healthcare."
+    },
+    "RC_1": {
+      "body": "AI diagnostic tool shows promising results in early disease detection",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Space Exploration",
+      "selftext": "Private space company announces successful test of reusable rocket technology, reducing launch costs by 70%. This development marks a significant step towards making space travel more accessible."
+    },
+    "RC_1": {
+      "body": "Reusable rocket technology brings space exploration costs down significantly",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Education Innovation",
+      "selftext": "Global education platform launches AI-powered personalized learning system, showing 45% improvement in student engagement and learning outcomes across 50 countries."
+    },
+    "RC_1": {
+      "body": "AI-driven education platform revolutionizes global learning experience",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Urban Development",
+      "selftext": "Smart city project demonstrates 30% reduction in energy consumption through IoT-enabled infrastructure and real-time data analytics. The model is now being adopted by major cities worldwide."
+    },
+    "RC_1": {
+      "body": "Smart city implementation shows significant environmental benefits",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Agricultural Technology",
+      "selftext": "Vertical farming startup achieves breakthrough in urban agriculture, producing 400% more food per square meter while using 95% less water than traditional farming methods."
+    },
+    "RC_1": {
+      "body": "Vertical farming technology demonstrates exceptional resource efficiency",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Biotechnology Innovation",
+      "selftext": "Scientists develop breakthrough gene editing technique with 99.9% accuracy, potentially revolutionizing treatment for genetic disorders. Clinical trials show promising results in treating rare genetic conditions."
+    },
+    "RC_1": {
+      "body": "New gene editing technology shows unprecedented precision in treating genetic disorders",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Digital Currency Evolution",
+      "selftext": "Central banks worldwide announce successful testing of digital currency system, reducing transaction costs by 85% and processing times to under 2 seconds. Implementation planned across 20 major economies."
+    },
+    "RC_1": {
+      "body": "Digital currency trials demonstrate significant improvements in financial transactions",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Ocean Conservation",
+      "selftext": "Revolutionary ocean cleanup system removes 95% of surface plastic waste in test area, with potential to clean 50% of the Great Pacific Garbage Patch within 5 years. System powered entirely by renewable energy."
+    },
+    "RC_1": {
+      "body": "New cleanup technology shows promising results in ocean plastic removal",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Transportation Revolution",
+      "selftext": "Autonomous electric vehicle network reduces urban traffic congestion by 60% in pilot city, while cutting transportation-related emissions by 75%. System integrates with existing public transit infrastructure."
+    },
+    "RC_1": {
+      "body": "Smart transportation system significantly improves urban mobility and sustainability",
+      "group": "up"
+    }
+  },
+  {
+    "RS": {
+      "title": "Mental Health Technology",
+      "selftext": "AI-powered mental health platform shows 80% success rate in early detection of depression and anxiety, providing personalized support to over 1 million users. Platform maintains 99.9% user privacy protection."
+    },
+    "RC_1": {
+      "body": "Digital mental health solution demonstrates breakthrough in early intervention",
+      "group": "up"
+    }
+  }
+]

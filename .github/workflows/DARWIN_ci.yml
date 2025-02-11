@@ -1,0 +1,77 @@
+name: DARWIN Continuous Integration
+
+# Workflow Configuration
+# ---------------------
+# This workflow handles the automated testing and quality assurance process
+# for the DARWIN project, triggered on main branch activities.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validation Pipeline
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Source Code Management
+      - name: Clone Repository
+        uses: actions/checkout@v3
+
+      # Environment Setup
+      - name: Initialize Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      # Package Management
+      - name: Setup Project Environment
+        run: |
+          # Core setup
+          python -m pip install --upgrade pip
+          
+          # Development tools
+          pip install flake8 pytest
+          
+          # Project setup
+          [ -f requirements.txt ] && pip install -r requirements.txt
+          pip install -e .
+
+      # Quality Assurance
+      - name: Verify Code Standards
+        run: |
+          echo "Running critical code checks..."
+          flake8 src/ tests/ \
+            --count \
+            --select=E9,F63,F7,F82 \
+            --show-source \
+            --statistics
+          
+          echo "Running style checks..."
+          flake8 src/ tests/ \
+            --count \
+            --exit-zero \
+            --max-complexity=10 \
+            --max-line-length=127 \
+            --statistics
+
+      # Testing
+      - name: Execute Test Suite
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE_URL: ${{ secrets.OPENAI_API_BASE_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_BASE_URL: ${{ secrets.ANTHROPIC_API_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ secrets.DEEPSEEK_API_BASE_URL }}
+        run: |
+          echo "Launching test suite..."
+          pytest tests/

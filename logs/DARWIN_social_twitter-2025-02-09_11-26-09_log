@@ -1,0 +1,37 @@
+INFO - 2025-02-09 11:26:09,305 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:16.261755, action=sign_up, info={'name': 'User0', 'user_name': 'user00101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:09,405 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:26:22.291815, action=sign_up, info={'name': 'User1', 'user_name': 'user10101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:09,506 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:26:28.366335, action=sign_up, info={'name': 'User2', 'user_name': 'user20101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:09,608 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:34.435155, action=create_post, info={'content': 'hello from 0', 'post_id': 1}
+INFO - 2025-02-09 11:26:09,727 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:41.587515, action=create_post, info={'content': 'hello from 0', 'post_id': 2}
+INFO - 2025-02-09 11:26:09,844 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:48.594075, action=create_post, info={'content': 'hello from 0', 'post_id': 3}
+INFO - 2025-02-09 11:26:09,993 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:57.574815, action=create_post, info={'content': 'hello from 0', 'post_id': 4}
+INFO - 2025-02-09 11:26:10,125 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:05.474595, action=create_post, info={'content': 'hello from 1', 'post_id': 5}
+INFO - 2025-02-09 11:26:10,318 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:17.049975, action=create_post, info={'content': 'hello from 1', 'post_id': 6}
+INFO - 2025-02-09 11:26:10,514 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:28.802115, action=create_post, info={'content': 'hello from 1', 'post_id': 7}
+INFO - 2025-02-09 11:26:10,626 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:35.536275, action=create_post, info={'content': 'hello from 1', 'post_id': 8}
+INFO - 2025-02-09 11:26:10,738 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:42.274755, action=create_post, info={'content': 'hello from 2', 'post_id': 9}
+INFO - 2025-02-09 11:26:10,853 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:49.167555, action=create_post, info={'content': 'hello from 2', 'post_id': 10}
+INFO - 2025-02-09 11:26:11,015 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:58.845555, action=create_post, info={'content': 'hello from 2', 'post_id': 11}
+INFO - 2025-02-09 11:26:11,201 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:28:10.052355, action=create_post, info={'content': 'hello from 2', 'post_id': 12}
+INFO - 2025-02-09 11:26:11,394 - social.twitter - {'posts': [{'post_id': 12, 'user_id': 2, 'content': 'hello from 2', 'created_at': '2025-02-09 11:28:10.052355', 'num_likes': 0, 'num_dislikes': 0, 'num_shares': 0, 'comments': []}]}
+INFO - 2025-02-09 11:26:12,575 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:29:32.447175, action=follow, info={'follow_id': 1}
+INFO - 2025-02-09 11:26:14,598 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:14.979532, action=sign_up, info={'name': 'User0', 'user_name': 'user00101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:14,699 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:26:21.047632, action=sign_up, info={'name': 'User1', 'user_name': 'user10101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:14,800 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:26:27.121252, action=sign_up, info={'name': 'User2', 'user_name': 'user20101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:14,901 - social.twitter - Trace inserted: user_id=3, current_time=2025-02-09 11:26:33.191992, action=sign_up, info={'name': 'User3', 'user_name': 'user30101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:15,005 - social.twitter - Trace inserted: user_id=4, current_time=2025-02-09 11:26:39.322432, action=sign_up, info={'name': 'User4', 'user_name': 'user40101', 'bio': 'A bio.'}
+INFO - 2025-02-09 11:26:15,105 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:45.383272, action=create_post, info={'content': 'hello from 0', 'post_id': 1}
+INFO - 2025-02-09 11:26:15,234 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:26:53.129992, action=create_post, info={'content': 'hello from 0', 'post_id': 2}
+INFO - 2025-02-09 11:26:15,423 - social.twitter - Trace inserted: user_id=0, current_time=2025-02-09 11:27:04.479952, action=create_post, info={'content': 'hello from 0', 'post_id': 3}
+INFO - 2025-02-09 11:26:15,575 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:13.585432, action=create_post, info={'content': 'hello from 1', 'post_id': 4}
+INFO - 2025-02-09 11:26:15,724 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:22.533352, action=create_post, info={'content': 'hello from 1', 'post_id': 5}
+INFO - 2025-02-09 11:26:15,868 - social.twitter - Trace inserted: user_id=1, current_time=2025-02-09 11:27:31.193752, action=create_post, info={'content': 'hello from 1', 'post_id': 6}
+INFO - 2025-02-09 11:26:15,993 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:38.657392, action=create_post, info={'content': 'hello from 2', 'post_id': 7}
+INFO - 2025-02-09 11:26:16,120 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:46.308292, action=create_post, info={'content': 'hello from 2', 'post_id': 8}
+INFO - 2025-02-09 11:26:16,311 - social.twitter - Trace inserted: user_id=2, current_time=2025-02-09 11:27:57.763192, action=create_post, info={'content': 'hello from 2', 'post_id': 9}
+INFO - 2025-02-09 11:26:16,426 - social.twitter - Trace inserted: user_id=3, current_time=2025-02-09 11:28:04.649812, action=create_post, info={'content': 'hello from 3', 'post_id': 10}
+INFO - 2025-02-09 11:26:16,574 - social.twitter - Trace inserted: user_id=3, current_time=2025-02-09 11:28:13.567132, action=create_post, info={'content': 'hello from 3', 'post_id': 11}
+INFO - 2025-02-09 11:26:16,679 - social.twitter - Trace inserted: user_id=3, current_time=2025-02-09 11:28:19.812232, action=create_post, info={'content': 'hello from 3', 'post_id': 12}
+INFO - 2025-02-09 11:26:16,876 - social.twitter - Trace inserted: user_id=4, current_time=2025-02-09 11:28:31.656832, action=create_post, info={'content': 'hello from 4', 'post_id': 13}
+INFO - 2025-02-09 11:26:17,005 - social.twitter - Trace inserted: user_id=4, current_time=2025-02-09 11:28:39.418552, action=create_post, info={'content': 'hello from 4', 'post_id': 14}
+INFO - 2025-02-09 11:26:17,120 - social.twitter - Trace inserted: user_id=4, current_time=2025-02-09 11:28:46.313092, action=create_post, info={'content': 'hello from 4', 'post_id': 15}

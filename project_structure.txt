@@ -1,0 +1,55 @@
+.
+├── .env
+├── .github/
+│   └── workflows/
+│       └── DARWIN_ci.yml
+├── .gitignore
+├── .pre-commit-config.yaml
+├── .pytest_cache/
+├── DARWIN/
+├── DARWIN-venv/
+├── LICENSE
+├── README.md
+├── datasets/
+│   ├── DARWIN_ecommerce_data/
+│   └── DARWIN_social_media/
+│       ├── DARWIN_twitter_data/
+│       └── DARWIN_reddit_data/
+├── data_generators/
+│   ├── DARWIN_reddit_generator/
+│   └── DARWIN_twitter_generator/
+├── docs/
+│   ├── DARWIN_api_docs/
+│   ├── DARWIN_developer_docs/
+│   └── DARWIN_user_guide/
+├── logs/
+├── pyproject.toml
+├── requirements.txt
+├── scripts/
+│   ├── DARWIN_deployment/
+│   ├── DARWIN_reddit_ecommerce/
+│   ├── DARWIN_reddit_basic/
+│   ├── DARWIN_reddit_counterfactual/
+│   ├── DARWIN_reddit_human_aligned/
+│   ├── DARWIN_twitter_basic/
+│   ├── DARWIN_twitter_standard/
+│   └── DARWIN_twitter_large_scale/
+├── src/
+│   └── DARWIN/
+│       ├── DARWIN_api/
+│       ├── DARWIN_config/
+│       ├── DARWIN_core/
+│       ├── DARWIN_data_gen/
+│       ├── DARWIN_models/
+│       └── DARWIN_utils/
+├── test/
+│   ├── DARWIN_agent_test/
+│   ├── DARWIN_infrastructure_test/
+│   ├── DARWIN_network_test/
+│   └── DARWIN_test_data/
+├── venv/
+└── visualization/
+    ├── DARWIN_network_dynamics/
+    ├── DARWIN_reddit_human_aligned_vis/
+    ├── DARWIN_reddit_counterfactual_vis/
+    └── DARWIN_twitter_standard_vis/ 

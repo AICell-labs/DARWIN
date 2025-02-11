@@ -1,0 +1,57 @@
+# DARWIN Project Configuration
+# =======================
+
+[tool.poetry]
+name = "DARWIN"
+version = "0.0.1"
+description = """
+Open Agents Social Interaction Simulations on a Large Scale
+"""
+readme = "README.md"
+
+# Project Metadata
+# ---------------
+repository = "https://github.com/AICell-labs/DARWIN.git"
+keywords = [
+    "LLM",             # Language Model Integration
+    "agent",           # Agent-based Systems
+    "social-network",  # Network Analysis
+    "graph",          # Graph Processing
+    "recommendation-system"  # Recommendation Engine
+]
+
+# Core Dependencies
+# ----------------
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+
+# Data Processing & Analysis
+pandas = "2.2.2"
+igraph = "0.11.6"
+cairocffi = "1.7.1"
+
+# Testing Framework
+pytest = "8.2.0"
+pytest-asyncio = "0.23.6"
+
+# Data Processing & Visualization
+pillow = "10.3.0"
+unstructured = "0.13.7"
+
+# AI & NLP Components
+sentence-transformers = "3.0.0"
+camel-ai = "0.2.2"
+
+# Development Tools
+pre-commit = "3.7.1"
+prance = "23.6.21.0"
+openapi-spec-validator = "0.7.1"
+
+# Database
+neo4j = "5.23.0"
+
+# Build Configuration
+# ------------------
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
